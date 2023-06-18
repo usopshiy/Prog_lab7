@@ -4,7 +4,8 @@ import connection.Server;
 import exceptions.ServerException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
+        Class.forName("org.postgresql.Driver");
         int port = 0;
         String strPort = "";
         String path = "route database";
